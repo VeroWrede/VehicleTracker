@@ -1,0 +1,7 @@
+.vscode
+appsettings.Development.json
+Startup.cs
+appsettings.json
+bin/
+obj/
+wwwroot/
