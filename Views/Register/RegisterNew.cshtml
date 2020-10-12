@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Register New Vehicle";
+}
+@model Vehicle 
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="CreateVehicle" asp-controller="Register" method="POST">
+    <label for="Owner">Owner:</label>
+    <select for="Owner">
+       @foreach(var Owner in ViewBag.Owners)
+        {
+            <option value="@Owner.FirstName">@Owner.LastName</option>
+        }
+        </select>
+    </select>
+    <div class="regitration-form">
+        <span asp-validation-for="Make"></span>
+        <label for="Make">Make:</label>
+        <input type="text" name="Make">
+    </div>
+    <div class="regitration-form">
+        <span asp-validation-for="Model"></span>
+        <label for="Model">Model:</label>
+        <input type="text" name="Model">
+    </div>
+    <div class="regitration-form">
+        <span asp-validation-for="Color"></span>
+        <label for="Collor">Color:</label>
+        <input type="text" name="Collor">
+    </div>
+    <input type="submit" value="Save">
+</form>

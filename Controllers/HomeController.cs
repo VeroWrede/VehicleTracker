@@ -10,15 +10,13 @@ namespace vehicleTracker.Controllers
 {
     public class HomeController : Controller
     {
+        private VehicleContext dbContext;
+        public HomeController(VehicleContext context)
+        {
+            dbContext = context;
+        }
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
