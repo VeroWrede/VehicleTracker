@@ -24,19 +24,19 @@ CREATE TABLE Owner(
     PRIMARY KEY (owner_id)
 );
 
-CREATE TABLE VehicleOwner(
-    vehicle_id INT,
-    owner_id int,
-    FOREIGN KEY (vehicle_id) REFERENCES Vehicle(vehicle_id),
-    FOREIGN KEY (owner_id) REFERENCES Owner(owner_id)
-);
+-- CREATE TABLE VehicleOwner(
+--     vehicle_id INT,
+--     owner_id int,
+--     FOREIGN KEY (vehicle_id) REFERENCES Vehicle(vehicle_id),
+--     FOREIGN KEY (owner_id) REFERENCES Owner(owner_id)
+-- );
 
-CREATE TABLE OwnerAddress(
-    owner_id INT,
-    address_id INT,
-    FOREIGN KEY (owner_id) REFERENCES Owner(owner_id),
-    FOREIGN KEY (address_id) REFERENCES Address(address_id)
-);
+-- CREATE TABLE OwnerAddress(
+--     owner_id INT,
+--     address_id INT,
+--     FOREIGN KEY (owner_id) REFERENCES Owner(owner_id),
+--     FOREIGN KEY (address_id) REFERENCES Address(address_id)
+-- );
 
 /* populating tables */
 

@@ -18,6 +18,6 @@ namespace vehicleTracker
         [Display(Name = "Vehicle Color")]
         public string Color { get; set; }
         public string Registration_number { get; set; }
-        public ICollection<VehicleOwner> VehicleOwners { get; set; }
+        // public ICollection<VehicleOwner> VehicleOwners { get; set; }
     }
 }
